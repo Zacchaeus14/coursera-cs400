@@ -11,5 +11,8 @@ cout: cout.cpp
 cout2: cout2.cpp
 	$(LD) $^ $(LDFLAGS) -o $@
 
-all: cout cout2
-CLEAN_RM += cout cout2
+cout3: cout3.cpp
+	$(LD) $^ $(LDFLAGS) -o $@
+
+all: cout cout2 cout3
+CLEAN_RM += cout cout2 cout3
